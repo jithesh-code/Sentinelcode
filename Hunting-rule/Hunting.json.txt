@@ -1,0 +1,13 @@
+{
+  "hunting": [
+    {
+      "displayName": "HuntingRule01",
+      "description": "test",
+      "query": "SecurityEvent | where EventID == \"4687\" | where CommandLine contains \"-noni -ep bypass $\"",
+      "tactics": [
+        "Persistence",
+        "LateralMovement",
+        "Collection"
+      ]
+    },
+}
